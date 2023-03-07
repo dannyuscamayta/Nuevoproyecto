@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root; Es muy similar a utlixar el html, sirve para crear variables en CSS */
+:root {
+  /* creando variables de color para usar en todo el documento */
+  --primary: #e94a3e;
+  --primary-light: #dda07d;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 500px;
+    background-color: #222;
+    /* para centrar a todo el medio del container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* -------------------------- */
+
+}
+
+.title {
+    font-size: 150px;
+    /* en el background tambien puede colocarse una imagen */
+    /* background: -webkit-linear-gradient(top left, var(--primary), #2e97ff, #9ffbcc); */
+    background: url(https://s.w-x.co/porqueelcieloesazul_es.jpg);
+    /* para poner una propiedad al texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* para centrar el titulo : */

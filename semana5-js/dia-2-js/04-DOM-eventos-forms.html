@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <style>
+          body {
+               background-color: #E4E9BE;
+          }
+          form {
+               background-color: white;
+               border: 1px solid #E6BA95;
+               max-width: 500px;
+               /* margin-top: 50px; */
+               margin: auto;
+               box-shadow: 0px 0px 20px #bbb;
+               padding: 15px;
+               border-radius: 1rem;
+          }
+          form input {
+               width: 100%;
+               margin-top: 1rem;
+               margin-bottom: 1rem;
+               border: none;
+               border-bottom: 1px solid #aaa;
+               padding-left: 8px;
+          }
+          .texto__rojo {
+               color: crimson;
+          }
+          .borde__rojo {
+               border:  3px solid crimson;
+          }
+     </style>
+
+     <title>eventos | acciones | sucesos</title>
+</head>
+<body>
+
+     <form id="formulario">
+          <label for="">Nombre:</label>
+          <input type="text" placeholder="Ingrese su nombre" id="inputNombre" />
+
+          <label for="">Apellido:</label>
+          <input type="text" placeholder="Ingrese su apellido" id="inputApellido" />
+          
+          <a href="https://www.google.com/" id="link" target="blank">Olvidaste tu contraseña</a>
+          <br />
+          <small class="texto__rojo" id="helper" hidden>Todos los campos deben estar llenos</small>
+          <hr />
+
+          <!-- por recomendacion un formulario solo debe tener un submit -->
+          <button type="submit">Crear usuario</button>
+          <button type="button">Cancelar</button>
+     </form>
+     <section>
+          <table border="1">
+               <thead>
+                    <tr>
+                         <th>Nro</th>
+                         <th>Nombre</th>
+                         <th>Apellido</th>
+                         <th>Acciones</th>
+                    </tr>
+               </thead>
+               <tbody id="tbody">
+
+               </tbody>
+          </table>
+     </section>
+     <script src="./04-DOM-eventos-forms.js"></script>
+</body>
+</html>

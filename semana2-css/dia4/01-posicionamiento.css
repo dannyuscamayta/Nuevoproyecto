@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #444;
+  padding-top: 60px;
+}
+
+/* 
+el posicionamiento es para ubicar cuadro
+position: 
+static: todos los elementos lo tienen este valor x defecto
+relative: sirve para mover un elemento a partir de su eje
+...... este tiene propiedades: y se tiene que usar para moverse top y left
+TOP: indica la cantidad de (px, rem, em, %) que un elemento se desplaza desde el techo o parte superior
+ejm: top: 5px; desde la parte superior se desplaza 5 px
+LEFT: es analogo al top, el elemento se mueve desde la izquierda
+OJO: el espacio o ciando el elemento se mueve su espacio no es ocupado por otro elemento, es decir el espacio se respeta.
+
+position: absolute;tambien sirve para mover un elemento, sin embargo;
+si su padre no tiene position: relative; el elemento puede ubicarse en el area
+del proximo padre relative, 
+todos los elementos ocupan su lugar y el elemento absoluto da la sensacion que 
+FLOTA sin respetar el flujo normal.
+tiene propiedades:
+top: desde el techo
+left: desde la izquierda
+botton: desde el piso
+right:desde la derecha
+
+position: fixed; sirve tambien para mover un elemento, sin embargo el punto de referencia es
+el view port, (la ventana del navegador)
+mas preciso la parte visible del navegador
+
+
+*/
+
+.header {
+    height: 60px;
+    width: 100%;
+    background: -webkit-linear-gradient(left, #76e276, #a9e2a9);
+    position: fixed;
+    top: 0;
+
+
+}
+
+
+.main {
+    width: 800px;
+    border: 1px dotted white;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: white; */
+    height: 4000px;
+    /* para centrar un elemento: con margin: 0p auto 0 auto; este auto dara las propiedades de centrado */
+    margin: 0 auto;
+    /* como padre de cuadro, para hacer respetar a todos los elementos hijos se usa position: absolute 
+    para controlar al hijo o hijos */
+    position: relative;
+
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    border: 1px solid yellow;
+    position: relative;
+    /* propiedades son top y left en px (para mover en relative)*/
+    /* se puede usar tambien en left 50% par centrar */
+    /* CALC()  es una funcion que sirve para hacer operaciones matematicas
+    entre distntas unid.  de medida, x ejem; 50% del tamaño del padre
+    meons 50px que es la mitad del ancho del elemento*/
+    top: 8px;
+    /* left: 15px;  (se usaria calc o solo px*/
+    left: calc(50% - 50px);
+}
+
+.cuadrado2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    
+}
+
+/* ------------------------------------------- */
+.circulo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 50%;
+    /* no respeta al padre MAIN */
+    position: absolute;
+    /* sus propiedades son: */
+    /* top: 0; */
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+}
+
+.parrafo {
+    /* la posicion absoluta del circulo, da al parrafo como si estaria flotanto */
+    color: white;
+
+}
+
+.boton-crear {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid green;
+    position: fixed;
+    /* propiedades son */
+    right: 20px;
+    bottom: 20px;
+}
+
+
+
+
+

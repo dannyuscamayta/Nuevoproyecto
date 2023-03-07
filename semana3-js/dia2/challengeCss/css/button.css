@@ -1,0 +1,14 @@
+/* boton re-utilizable */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 1rem 4rem;
+    color: var(--white);
+    border-radius: 1.5rem;
+    background: -webkit-linear-gradient(left, var(--cyan), var(--blue));
+    font-weight: 700;
+}
+
+
+

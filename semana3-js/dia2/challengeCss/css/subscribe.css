@@ -1,0 +1,38 @@
+/* seccion de la subscripción */
+
+.subscribe {
+    max-width: 768px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: var(--dark-blue-1);
+    padding: 2.5rem 4rem;
+    text-align: center;
+    position: relative;
+    top: 7rem;
+
+}
+
+.subscribe__title {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+.subscribe__text {
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    color: #ccc;
+}
+
+.subscribe__form {
+    display: flex;
+}
+
+.subscribe__input {
+    flex: 1;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    margin-right: 1rem;
+    padding: 0 2rem;
+}
+

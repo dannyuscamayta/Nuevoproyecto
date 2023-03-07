@@ -1,0 +1,37 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.seccion1 {
+    height: 100px;
+    background-color: #444;
+}
+
+.seccion2 {
+    height: 200px;
+    background-image: url(https://plustatic.com/1783/conversions/tipos-nubes-large.jpg);
+    /* controlar la repeticion de la imagen no es una etiqueta */
+    background-repeat: no-repeat;
+    /* controlar la posicion de la img */
+    background-position: center;
+    background-size: cover;
+}
+
+.seccion2__titulo {
+    height: 200px;
+    background-color: rgb(40, 40, 40, 0,5);
+    color: #eee;
+    text-align: center;
+}
+
+.seccion3 {
+    height: 500px;
+    background: #1e130c;  /* fallback for old browsers */
+    background: linear-gradient(to top, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+
+}
+

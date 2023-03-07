@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+}
+
+header {
+    height: 60px;
+    background-color: #444;
+
+}
+
+/* Block: Ocupa el 100% del ancho del padre
+Inline-block: ocupa el ancho del contenido o el ancho establecido 
+mediante CSS
+Inline: ocupa el ancho del contenido NO PUEDE ESTABLECERSE SU ANCHO EN CSS
+ */
+.main__menu {
+    width: 200px;
+    background-color: #555;
+    display: inline-block;
+}
+
+.main__noticias {
+    width: 600px;
+    background-color: #666;
+    display: inline-block;
+}
+
+.header__item {
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    
+}

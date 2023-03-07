@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tablas</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Configuracion de tablas</h2>
+        <!-- todo eso se hace con CSS -->
+        <!-- bgColor es para darle fondo a la tabla, PERO YA NO SE USA -->
+        <!-- background="" se puede poner un link de una imagen de fondo -->
+        <!-- borderColor="" este da color al contorno -->
+        <table border="1" bgcolor="85C88A" borderColor="white" cellpadding="10" width="300" height="150">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Daniel</td>
+              <td>Uscamayta</td>
+              <td>36 años</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- es una nueva seccion para el row span o colspan -->
+      <section>
+          <h2>Rowspan y Colspan</h2>
+          <table border="1">
+            <thead>
+                <tr>
+                    <!-- la mayoria de estos comandos estan obsoletos xq se usa CSS -->
+                    <!-- <td Rowspan="3"> rowspan hace que donde se ponga esta ocupara las filas de otra fila y por defecto su valor es 1 -->
+                    <!--<td Colspan="2"> colspan ya tambien afecta a las columnas -->
+                        <!-- tambien se puede utilizar una etiqueta <center>3 meses</center> esta la llevara al centro de la tabla -->
+                    <th>Curso</th>
+                    <th>Duración</th>
+                    <th>Docente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Algoritmos</td>
+                    <td>5 meses</td>
+                    <td>jose pablo enriquez</td>
+                </tr>
+                <tr>
+                    <td>Arduino</td>
+                    <td>1 mes</td>
+                    <td>jorge Garnica</td>
+                </tr>
+            </tbody>
+          </table>
+      </section>
+    </main>
+  </body>
+</html>

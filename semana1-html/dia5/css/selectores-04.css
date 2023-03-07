@@ -1,0 +1,43 @@
+/*font-family: 'Montserrat', sans-serif; */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* obecece a la lista ordenada nth-child lo pondra el color de la lista */
+li:nth-child(2) {
+    color: lightseagreen;
+}
+
+/* obedece al primer elemento de la lista */
+li:first-child {
+    color: blueviolet;
+}
+
+/* cambiar el ultimo elemento de la lista */
+li:last-child {
+    color: orangered;
+}
+
+/* odd y even */
+/* se usa para pintar los impar */
+/* 
+tbody tr :nth-child(odd) {
+    background: purple;
+}
+
+/*se usa para pintar los pares */
+/*
+tbody tr :nth-child(even) {
+    background: red;
+}
+ */
+
+tbody tr {
+    background: lightskyblue;
+}
+
+thead {
+    background: greenyellow;
+}
+

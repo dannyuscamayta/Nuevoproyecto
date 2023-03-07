@@ -1,0 +1,11 @@
+{
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "[json]": {
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": true
+    },
+    "editor.colorDecorators": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on"
+}

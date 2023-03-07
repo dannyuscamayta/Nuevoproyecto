@@ -1,0 +1,37 @@
+/* esto es cuando se consume contenido desde un CDN content delivered network */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+.titulo {
+    /* tipo de fuente que se utilizara en la page */
+    font-family: Arial, Helvetica, sans-serif;
+    /* tamaño de la fuente */
+    font-size: 32px;
+    /* grosor de la fuente (valores van de 100 a 900 que es super negrita)*/
+    /* valores tambien hay en BOLD y NORMAL */
+    font-weight: 500;
+    font-style: italic;
+}
+
+.subtitulo {
+    /* une todas las propiedades de las fuentes */
+    /* el orden es: style, weight, size, font */
+    font: normal 500 24px Arial;
+}
+
+.parrafo__p1 {
+    /* alineacion del texto: center, right, left, justified */
+    text-align: right;
+}
+
+.parrafos__titulo {
+    text-align: center;
+    color: white;
+    background-color: #444;
+    /* espaciado entre letra y letra */
+    letter-spacing: 8px;
+    /* word spacing es entre palabra y palabra */
+    word-spacing: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}

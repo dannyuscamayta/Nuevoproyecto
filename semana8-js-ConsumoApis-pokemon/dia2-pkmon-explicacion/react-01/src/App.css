@@ -1,0 +1,13 @@
+.articulos {
+     border: 1px solid orangered;
+     border-radius: 20px;
+     max-width: 600px;
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.articulos__articulo {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}

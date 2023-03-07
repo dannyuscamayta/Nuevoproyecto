@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* :root es = a html */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  /* 1 rem = 16px : es el tamaño de ñetra del documento en general (FONT-SIZE)
+        1 em =          : es el tamaño de letra del padre directo de un elemento ()
+    */
+  height: 3.75rem;
+  background-color: #555;
+}
+
+.main {
+  display: flex;
+  min-height: calc(100vh - 3.75rem);
+  background-color: #ccc;
+  /* flex-wrap: wrap; ==> si eltotal de los hijos, superan el ancho total del padre
+  los hijos colapsan y se crea mas de una fila = row*/
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start; */
+}
+
+.section__left {
+  width: 50%;
+  height: 200px;
+  background: #a11010;
+}
+.section__right {
+  width: 50%;
+  height: 200px;
+  background: #2576c7;
+}
+
+/* Ancho de una tablet */
+@media (max-width: 768px) {
+
+    .main {
+        flex-direction: column;
+    }
+    
+  .section__left,
+  .section__right {
+    width: 100%;
+  }
+}

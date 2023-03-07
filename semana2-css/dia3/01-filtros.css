@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #bbb;
+}
+
+.seccion1 {
+    /* blur es un desenfoque que admite valores entre 1px y 10px */
+    /* filter: blur(4px); */
+    /* ggrayscale es un filtro para colocar un contenor */
+    /* en escala de grises: valores de 0 a 1 */
+    /* filter: grayscale(1); */
+}
+
+/* :hover, coloca estilos cuando el mouse esta sobre un elemento */
+.seccion1:hover {
+    /* filter: grayscale(0.7); */
+    /* brightness: aplica brillo a un elemento y acepta valores entre 0 y 10 ejem; 0.8 */
+    /* el valor 1 es el brillo normal de la imagen */
+    /* filter: brightness(0.5); */
+
+    /* opacity define la transparencia de un elemento */
+    /* 0 es transparente y 1 nada transparente */
+    filter: opacity(0.5);
+
+}
+

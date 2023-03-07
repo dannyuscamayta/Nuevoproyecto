@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root; Es muy similar a utlixar el html, sirve para crear variables en CSS */
+:root {
+  /* creando variables de color para usar en todo el documento */
+  --primary: #e94a3e;
+  --light: #eee;
+  --gray: #666;
+  --gray-light: #999;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light);
+}
+
+.main {
+  display: flex;
+  border: 1px solid blue;
+  height: 400px;
+  /* Justify content: es para alinear los elementos en el eje principal
+ o en el eje Y o X, ¿cual es el eje principal?
+ cuando flex direction es row, el eje principal es x
+ cuando flex direction es column, el eje principal es Y */
+  justify-content: space-evenly;
+  /* align-items: alinea los elementos en el eje secundario 
+ X eje principal
+ Y eje secundario
+ valores de justify y align-items: center, space-between, space around
+ flex-end, flex star, center*/
+  align-items: center;
+}
+
+.main__formulario {
+  width: 600px;
+  /* height: 100px; */
+  border: 1px solid red;
+}

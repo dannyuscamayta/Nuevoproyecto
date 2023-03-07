@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root; Es muy similar a utlixar el html, sirve para crear variables en CSS */
+:root {
+  /* creando variables de color para usar en todo el documento */
+  --primary: #e94a3e;
+  --light: #eee;
+  --gray: #666;
+  --gray-light: #999;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light);
+}
+
+.padre {
+  border: 1px solid tomato;
+  /* display: flex ; permite convertir al elemento en un padre flexible */
+  display: flex;
+  /* POR DEFECTO: tienen incluido el
+    flex-direction: row;
+    flex-wrap: nowrap ; los hijos no colapsan hacia abajo*/
+  /* flex-direction: row (fila) automaticamente se asume cuando el padre es display flex */
+  /* es una regla invisible que tiene el display:flex */
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  flex-wrap: wrap; /* propiedad para que los hijos si colapsan en caso necesiten mas ancho que el padre*/
+}
+
+.caja-1,
+.caja-2,
+.caja-3,
+.caja-4 {
+  border: 1px solid black;
+  /* el width en este caso funciona con el porcentaje de FLEX_WRAP */
+  width: 25%;
+}
+
+.caja-1 {
+    width: 200px;
+    background-color: #666;
+}
+
+
+.seccion2 {
+  display: flex;
+
+}
+
+/* el flex 1 le da al grupo de la seccion mayor flexibilidad haciendo que estos se repartan 
+todo el ancho de la pagina en partes iguales */
+.seccion2__1 {
+  flex: 1;
+  border: 1px solid red;
+}
+
+.seccion2__2 {
+  flex: 1;
+  border: 1px solid red;
+}
+
+.seccion2__3 {
+  flex: 1;
+  border: 1px solid red;
+}
+
+.seccion2__4 {
+  flex: 1;
+    border: 1px solid red;
+}
+
+.header {
+  height: 60px;
+  background-color: tomato;
+}
+
+.header__lista {
+  height: 100%;
+  background-color: teal;
+  display: flex;
+  list-style: none;
+
+}
+
+.header__item {
+  flex: 1;
+  border: 1px solid yellow;
+}
+
+
+

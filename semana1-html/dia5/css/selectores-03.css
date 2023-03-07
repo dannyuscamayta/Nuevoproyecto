@@ -1,0 +1,33 @@
+header {
+  background: gray;
+}
+section {
+  background: blue;
+}
+
+h1,
+h2,
+h3 {
+  color: orange;
+}
+
+/* selecciona hijos sin importar el nivel */
+.anuncios .txtAnuncios {
+    background: chocolate;
+    color: white;
+}
+
+.tarjeta {
+  background: black;
+}
+
+.tarjeta > .cuerpo_de-tarjeta {
+  background: orange;
+}
+/* seleccionamos hijos especificos y en orden */
+.tarjeta > .cuerpo_de-tarjeta > p {
+    color: gray;
+}
+.tarjeta > .pie_pagina-tarjeta {
+  background: green;
+}

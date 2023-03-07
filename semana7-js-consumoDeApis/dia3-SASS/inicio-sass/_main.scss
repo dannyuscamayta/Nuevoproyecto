@@ -1,0 +1,19 @@
+*{
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background: $white;
+     font-family: poppins;
+}
+
+button {
+     border: none;
+     outline: none;
+     padding: 10px 30px;
+     font-weight: bold;
+     font-size: 20px;
+     background-color: $color1;
+     color: $white;
+}

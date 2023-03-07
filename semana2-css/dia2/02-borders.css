@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario {
+    border: 2px solid rgb(157, 37, 187);
+    width: 500px;
+    height: 600px;
+    /*el auto le da un margen a los costados iguales, haciendo que este se centre  */
+    margin: 20px auto;
+    /* borde curvo o borde redondo */
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+/* boton de enviar */
+.formulario__submit {
+    border: none;
+    padding: 10px;
+    color: #eee;
+    background-color: rgb(157, 37, 187);
+    border-radius: 4px;
+    margin-top: 10px;
+    /* colocando el borde solo en la parte baja */
+    border-bottom: 4px solid #25023a;
+
+}
+
+.formulario__input {
+    width: 100%;
+    padding: 5px 30px;
+    border: none;
+    /* el outline es el borde del borde es un segundo borde exterior */
+    /* este no es tomado en cuenta para calcular el ancho ni el alto de un elemento, siempre esta flotando */
+    outline: none;
+    border-bottom: 1px solid #e5b8ff;
+    background-image: url(./Vector.svg);
+    background-color: #fcf6ff;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center left;
+}   
+
+.formulario__mensaje {
+    outline: none;
+    width: 100%;
+    background-color: #fcf6ff;
+    margin-top: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+

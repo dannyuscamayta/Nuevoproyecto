@@ -1,0 +1,53 @@
+/* seccion de comentarios /casi footer */
+
+.comments {
+    max-width: var(--width);
+    margin: 0 auto;
+    display: flex;
+    background-image: url(../images/bg-quotes.png);
+    background-repeat: no-repeat;
+    /*background-position: 0px 0px;  */ /*con los pixeles se pueden mover de acuerdo a su eje*/
+    padding: 1rem;
+}
+
+.comment {
+    /* height: 220px; */
+    flex: 1;
+    margin: 1.5rem;
+    background-color: var(--dark-blue-4);
+    border-radius: 0.65rem;
+    padding: 2.5rem 2rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 1rem;
+}
+
+.comment__text {
+    line-height: 1.7rem;
+    /* margin-bottom: 1rem; */
+    color: #ddd;
+}
+
+.comment__avatar {
+    display: flex;
+    /* align-items: center; */
+
+}
+
+.comment__figure img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment__info {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.comment__job {
+    font-size: 0.8rem;
+    color: #ccc;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <style>
+          .fondo__dark {
+              background-color: #444; 
+          }     
+
+          .fondo__light {
+               background-color: #eee;
+          }
+
+          .header {
+               height: 80px;
+          }
+
+          .main {
+               min-height: calc(100vh - 80px);
+          }
+          
+     </style>
+
+
+    <title>Clases y Ids</title>
+  </head>
+  <body>
+    <header id="header" class="header"></header>
+     <main class="main fondo__light" id="main">
+          <button id="btnToggle">
+               Interruptor header
+          </button>
+
+          <section id="seccion1">
+               <a href="#" id="link">Mi link</a>
+          </section>
+     </main>
+
+    <script src="./04-DOM-elements.js"></script>
+  </body>
+</html>

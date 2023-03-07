@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <!-- estos formularios se crean con la llave form, en forma antigua -->
+    <form>
+      <table>
+        <tr>
+          <!-- el ID es un identificador unico, y con eso en el for se le puede concatenar para que cuando se haga click en el nombre completo este se vaya a la casilla del input -->
+          <td><label for="inputNombre">Nombre completo:</label></td>
+          <td><input type="text" id="inputNombre" placeholder="Ingrese nombre completo" minlength="4" maxlength="15" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="inputEdad">Edad</label></td>
+          <td><input type="number" id="inputEdad" placeholder="Ingrese su edad" min="0" max="15"/></td>
+        </tr>
+
+        <tr>
+            <td><label for="inputFechaNacimiento">Fecha de nacimiento</label></td>
+            <td><input type="date" id="inputFechaNacimiento" value="2022-10-05"/></td>
+        </tr>
+
+        <tr>
+            <td><label for="inputColor">color</label></td>
+            <td><input type="color" id="inputColor"/></td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Genero</label>
+            </td>
+            <td>
+                <label for="inputRadioM">Masc.</label>
+                <input type="radio" id="inputRadioM" name="genero" checked/>
+
+                <label for="inputRadioF">Fem.</label>
+                <input type="radio" id="inputRadioF" name="genero"/>
+
+                <label for="inputRadioO">Otro</label>
+                <input type="radio" id="inputRadioO" name="genero"/>
+            </td>
+
+            <tr>
+                <td>
+                    <label for="">Idiomas</label>
+                </td>
+                <td>
+                    <label for="checkIngles">Ingles</label>
+                    <input type="checkbox" id="checkIngles" checked/>
+
+                    <label for="checkFrances">Frances</label>
+                    <input type="checkbox" id="checkFrances"/>
+
+                    <label for="checkAleman">Alemán</label>
+                    <input type="checkbox" id="checkAleman"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputEmail">Email:</label>
+                </td>
+                <td>
+                    <input type="email" value="@gmail.com" placeholder="Ingrese su correo" id="inputEmail"/>
+                </td>
+            </tr>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="inputPassword">Password</label>
+            </td>
+            <td>
+                <input type="password" id="inputPassword">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="txtAreaComentario">Comentarios</label></td>
+            <td><textarea name="" id="txtAreaComentario" cols="40" rows="5"></textarea></td>
+        </tr>
+
+        <tr>
+            <td><label for="slcDepartamento">Seleccione su departamento</label></td>
+            <td>
+                <select id="slcDepartamento">
+                    <option >Arequipa</option>
+                    <option >Lima</option>
+                    <option >Tacna</option>
+                    <option >Cusco</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="inputFileSubirArchivo">Subir archivo</label></td>
+            <td><input type="file" id="inputFileSubirArchivo"/></td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Acciones</label>
+            </td>
+            <td>
+                <input type="submit" value="Registrarme"/>
+                <input type="reset" value="Limpiar formulario"/>
+            </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
